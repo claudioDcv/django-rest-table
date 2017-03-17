@@ -20,7 +20,6 @@ REST_FRAMEWORK = {
 
 ### Custom Pagination.py
 ```python
-# from django.contrib.auth.models import User
 import django_filters
 from rest_framework.response import Response
 from rest_framework import pagination
