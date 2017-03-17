@@ -1,0 +1,94 @@
+/*  Table */
+.sorting{
+  position: relative;
+  cursor: pointer;
+  padding-right: 24px!important;
+}
+.sorting span{
+  position: absolute;
+  top: 19px;
+  right: 7px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid hsla(208, 98%, 43%,0);
+  border-right: 5px solid hsla(208, 98%, 43%,0);
+  border-bottom: 5px solid hsl(208, 98%, 43%);
+}
+.sorting span::after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: -5px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid hsla(0, 0%, 0%, 0);
+  border-right: 5px solid hsla(0, 0%, 0%, 0);
+  border-top: 5px solid hsl(208, 98%, 43%)
+}
+.sorting:hover{
+  background: hsl(240, 14%, 97%);
+}
+.sorting.sorting-asc{
+
+}
+.sorting.sorting-desc{
+
+}
+
+.sorting.sorting-asc span{
+  position: absolute;
+  top: 21px;
+  right: 7px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid hsla(208, 98%, 43%,0);
+  border-right: 5px solid hsla(208, 98%, 43%,0);
+  border-bottom: 5px solid hsl(208, 98%, 43%);
+}
+.sorting.sorting-desc span{
+  position: absolute;
+  top: 21px;
+  right: 7px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: none;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid hsl(208, 98%, 43%);
+}
+.sorting.sorting-asc span::after,
+.sorting.sorting-desc span::after{
+  display: none !important;
+}
+
+.pagination-container{
+  position: relative;
+  padding-right: 80px;
+}
+.pagination-info{
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  margin: 0px;
+}
+.page-info{
+  display: block;
+  background: hsl(0, 0%, 100%);
+  margin: 0px 10px;
+  border-radius: .25rem;
+  line-height: 37px;
+  padding: 0 8px;
+  color: hsl(208, 98%, 43%);
+  border: solid 1px hsl(0, 0%, 87%);
+  height: 38px;
+  max-width: 83px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
