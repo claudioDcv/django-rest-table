@@ -1,4 +1,4 @@
-# from django.contrib.auth.models import User
+# create by claudio.dcv@gmail.com
 import django_filters
 from rest_framework.response import Response
 from rest_framework import pagination
