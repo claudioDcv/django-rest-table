@@ -10,6 +10,8 @@
 
 ### Setup
 - minimun config in `settings.py`
+- Import custom pagination
+    - ```python'DEFAULT_PAGINATION_CLASS': '<app-name>.<file-name>.PaginationDjangoRestTable',```
 
 ```python
 REST_FRAMEWORK = {
@@ -19,7 +21,7 @@ REST_FRAMEWORK = {
 }
 ```
 
-### Custom Pagination.py
+### Custom Pagination.py (file custom.py)
 ```python
 import django_filters
 from rest_framework.response import Response
