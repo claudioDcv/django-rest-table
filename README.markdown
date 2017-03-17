@@ -6,7 +6,7 @@
 ## This Table is create in vanilla javascript, no required dependencies
 
 ### Dependence Optional
-- Bootstrap 3 or 4
+- css Bootstrap 3 or 4
 
 ### Setup
 - minimun config in `settings.py`
